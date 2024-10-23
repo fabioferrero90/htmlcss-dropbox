@@ -55,6 +55,14 @@ footer {
   display:flex;
 }
 
+.col2-60_40 > *:first-child {
+  width: 63%;
+}
+
+.col2-60_40 > *:last-child {
+  width: 37%;
+}
+
 .btn {
   display: inline-block;
   padding: 8px 15px;
@@ -62,11 +70,21 @@ footer {
   color:white;
   text-decoration: none;
   text-align: center;
-  cursor: pointer;
+  cursor:pointer;
+}
+
+.btn:hover {
+  opacity:0.5;
 }
 
 .card ul {
   list-style: none;
+}
+
+.section_title h2,
+.section_footer h2 {
+  font-size:2.4rem;
+  font-weight: 700;
 }
 
 /* Header */
@@ -205,11 +223,6 @@ section.hero {
   padding:165px 0;
 }
 
-.price_table .section_title h2{
-  font-size:3rem;
-  font-weight: 700;
-}
-
 .price_table .billing {
   padding: 50px 0;
   display:flex;
@@ -337,4 +350,49 @@ section.hero {
 
 .tablegrid_single .card_content p {
   padding-top:60px;
+}
+
+/* Partner Section  */
+.partner_section {
+  padding-bottom:160px;
+}
+
+
+.partner_section .textbox {
+  padding:60px 50px;
+}
+
+.partner_section .textbox h4 {
+  font-size:1.5rem;
+}
+
+.partner_section .textbox p {
+  padding:25px 0;
+}
+
+.partner_section .textbox .btn {
+  background-color: white;
+  color:black;
+  border:1px solid black;
+}
+
+/* Feature Section  */
+.feature_section .grid_features .row {
+  flex-wrap: wrap;
+  padding:50px 0;
+  gap:50px;
+}
+
+.feature_section .grid_features .row .card {
+  width:calc(100% / 3 - 50px); 
+}
+
+.feature_section .grid_features .row .card h4 {
+  font-size: 1.3rem;
+  padding-bottom:20px;
+}
+
+.feature_section .section_footer {
+  width:60%;
+  padding:70px 0;
 }
